@@ -1,11 +1,7 @@
 import React from "react"
 import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import stitches from "../stitches"
-import StitchesImage from "../images/stitches.svg"
-import VercelImage from "../images/vercel.svg"
-import NextJSImage from "../images/nextjs.svg"
 
 const Container = stitches.styled("main", {
   display: "block",
@@ -30,6 +26,11 @@ const ImageContainer = stitches.styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  "> *": {
+    "+ *": {
+      marginLeft: "$rg",
+    },
+  },
 })
 
 const Home: NextPage = () => {
@@ -41,24 +42,9 @@ const Home: NextPage = () => {
       <Fold>
         <h1>NextJS + Stitches SSG Boilerplate</h1>
         <ImageContainer>
-          <Image
-            src={NextJSImage}
-            alt="Next JS Logo"
-            width="100"
-            layout="fixed"
-          />
-          <Image
-            src={StitchesImage}
-            alt="Stitches Logo"
-            width="100"
-            layout="fixed"
-          />
-          <Image
-            src={VercelImage}
-            alt="Vercel Logo"
-            width="100"
-            layout="fixed"
-          />
+          <img src="/nextjs.svg" alt="Next JS Logo" width="100" height="100" />
+          <img src="/stitches.svg" alt="Stitches Logo" width="50" />
+          <img src="/vercel.svg" alt="Vercel Logo" width="100" height="100" />
         </ImageContainer>
       </Fold>
     </Container>
