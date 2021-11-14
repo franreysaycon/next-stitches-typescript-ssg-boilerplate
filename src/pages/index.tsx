@@ -46,7 +46,6 @@ const Home: NextPage = () => {
             src={require("../images/nextjs.svg?url")}
             alt="Next JS Logo"
             width="100"
-            height="100"
           />
           <img
             src={require("../images/stitches.svg?url")}
@@ -57,7 +56,6 @@ const Home: NextPage = () => {
             src={require("../images/vercel.svg?url")}
             alt="Vercel Logo"
             width="100"
-            height="100"
           />
         </ImageContainer>
       </Fold>

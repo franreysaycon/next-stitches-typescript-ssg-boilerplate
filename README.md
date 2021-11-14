@@ -3,7 +3,7 @@ This is a boilerplate for having NextJS in typescript as well as Stitches/React 
 This is optimized for SSG deployment since we will not be using `next/image` we will use `next-optimized-image` instead. 
 
 ## Requirements
-- Node v14 or above
+- Node v16.13 or above
 - yarn installed
 
 ## Setup
