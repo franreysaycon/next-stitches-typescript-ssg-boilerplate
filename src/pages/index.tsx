@@ -42,9 +42,23 @@ const Home: NextPage = () => {
       <Fold>
         <h1>NextJS + Stitches SSG Boilerplate</h1>
         <ImageContainer>
-          <img src="/nextjs.svg" alt="Next JS Logo" width="100" height="100" />
-          <img src="/stitches.svg" alt="Stitches Logo" width="50" />
-          <img src="/vercel.svg" alt="Vercel Logo" width="100" height="100" />
+          <img
+            src={require("../images/nextjs.svg?url")}
+            alt="Next JS Logo"
+            width="100"
+            height="100"
+          />
+          <img
+            src={require("../images/stitches.svg?url")}
+            alt="Stitches Logo"
+            width="50"
+          />
+          <img
+            src={require("../images/vercel.svg?url")}
+            alt="Vercel Logo"
+            width="100"
+            height="100"
+          />
         </ImageContainer>
       </Fold>
     </Container>
